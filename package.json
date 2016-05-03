@@ -1,0 +1,31 @@
+{
+  "name": "oloo-factory-creator",
+  "description": "Created factory functions for objects implementing the OLOO pattern",
+  "main": "./lib/create-factory.js",
+  "devDependencies": {
+    "babel-cli": "^6.5.1",
+    "babel-plugin-transform-es2015-modules-umd": "^6.5.0",
+    "jasmine-core": "^2.2.0",
+    "jasmine-node": "*",
+    "onchange": "^2.0.0",
+    "uglify-js": "^2.6.1"
+  },
+  "scripts": {
+    "start": "npm install && npm run build && npm run watch",
+    "watch": "onchange './lib/create-factory.js' -- npm run build",
+    "test": "jasmine-node tests",
+    "build": "npm run build:umd",
+    "build:umd": "babel ./lib/create-factory.js --plugins transform-es2015-modules-umd | uglifyjs -o ./dist/create-factory.min.js -nmf  --"
+  },
+  "keywords": [
+    "oloo",
+    "factory",
+    "ptototype"
+  ],
+  "author": "Dan Moore",
+  "license": "Unlicense",
+  "bugs": {
+    "url": "TODO"
+  },
+  "homepage": "TODO"
+}
