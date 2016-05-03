@@ -4,18 +4,34 @@ This library allows for the creation of factory functions for objects implementi
 
 Essentially this library allows a normal object notation syntax to be used for instantiation and inheritance instead of the horrible `FunctionName.prototype.method = function ()...` syntax or the ES6 `class` syntax and wraps the object creation up in a factory function. This has convenient functionality such as assigning properties automatically onto the new object and also hides the implementation details of how the object was created.
 
-## Usage
+## Installation
 
-First install the library:
+### Node
 
 ```
 npm install oloo-factory-creator
 ```
 
-Then import the `createFactory` function:
+### Browser
 
+Download `dist/create-factory.min.js` or you  can install with bower:
+
+```
+bower install oloo-factory-creator
+```
+
+## Usage
+
+In Node, import the `createFactory` function:
+         
 ```javascript
 var createFactory = require('oloo-factory-creator');
+```
+
+In the browser, import via the script tag, which creates a global function called `createFactory`:
+
+```html
+<script src="/path/to/dist/create-factory.min.js" type="text/javascript"></script>
 ```
 
 ### Automatically assign properties into the created objects
@@ -81,9 +97,7 @@ var User = {
     }
 };
 
-var bob = userFactory({
-    name: 'Bob'
-});
+var bob = userFactory('Bob');
 
 console.log(bob.name); // Outputs "Bob"
 console.log(bob.getName()); // Outputs "Bob"
@@ -91,7 +105,7 @@ console.log(bob.getName()); // Outputs "Bob"
 
 ### Modules
 
-With either of the above methods, the recommended usage is to export the created factory method. For example, `user.js` could look like the following:
+With either of the above methods, if you're using modules, the recommended usage is to export the created factory method. For example, `user.js` could look like the following:
 
 ```javascript
 var createFactory = require('oloo-factory-creator');

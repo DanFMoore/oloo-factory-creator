@@ -18,6 +18,10 @@
     "build": "npm run build:umd",
     "build:umd": "babel ./lib/create-factory.js --plugins transform-es2015-modules-umd | uglifyjs -o ./dist/create-factory.min.js -nmf  --"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TheChech/oloo-factory-creator.git"
+  },
   "keywords": [
     "oloo",
     "factory",

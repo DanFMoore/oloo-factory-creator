@@ -1,0 +1,27 @@
+{
+  "name": "oloo-factory-creator",
+  "description": "Creates factory functions for objects implementing the OLOO pattern",
+  "main": "./lib/create-factory.js",
+  "authors": [
+    "Dan Moore"
+  ],
+  "license": "Unlicense",
+  "keywords": [
+    "oloo",
+    "factory",
+    "ptototype"
+  ],
+  "homepage": "https://github.com/TheChech/oloo-factory-creator",
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
