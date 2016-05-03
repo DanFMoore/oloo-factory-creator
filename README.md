@@ -6,7 +6,13 @@ Essentially this library allows a normal object notation syntax to be used for i
 
 ## Usage
 
-First import the `createFactory` function:
+First install the library:
+
+```
+npm install oloo-factory-creator
+```
+
+Then import the `createFactory` function:
 
 ```javascript
 var createFactory = require('oloo-factory-creator');
