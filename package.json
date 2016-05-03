@@ -1,6 +1,6 @@
 {
   "name": "oloo-factory-creator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Creates factory functions for objects implementing the OLOO pattern",
   "main": "./lib/create-factory.js",
   "devDependencies": {
