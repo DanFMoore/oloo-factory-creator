@@ -1,6 +1,7 @@
 {
   "name": "oloo-factory-creator",
-  "description": "Created factory functions for objects implementing the OLOO pattern",
+  "version": "0.1.0",
+  "description": "Creates factory functions for objects implementing the OLOO pattern",
   "main": "./lib/create-factory.js",
   "devDependencies": {
     "babel-cli": "^6.5.1",
@@ -25,7 +26,7 @@
   "author": "Dan Moore",
   "license": "Unlicense",
   "bugs": {
-    "url": "TODO"
+    "url": "https://github.com/TheChech/oloo-factory-creator/issues"
   },
-  "homepage": "TODO"
+  "homepage": "https://github.com/TheChech/oloo-factory-creator#readme"
 }
