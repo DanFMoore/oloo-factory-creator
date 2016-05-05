@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/TheChech/oloo-factory-creator/issues"
   },
-  "homepage": "https://github.com/TheChech/oloo-factory-creator#readme"
+  "homepage": "https://github.com/TheChech/oloo-factory-creator#readme",
+  "engines": {
+    "node": ">= 4.0.0"
+  }
 }

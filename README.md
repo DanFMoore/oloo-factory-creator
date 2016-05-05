@@ -8,6 +8,8 @@ Essentially this library allows a normal object notation syntax to be used for i
 
 ### Node
 
+Requires Node 4 due to requiring `Object.assign()`.
+
 ```
 npm install oloo-factory-creator
 ```
